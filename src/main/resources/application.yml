@@ -1,0 +1,20 @@
+spring:
+  # Data config
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/classicmodels
+    username: root
+    password: password
+
+server:
+  port: 8081
